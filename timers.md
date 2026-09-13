@@ -1,9 +1,7 @@
 # Functional requirements
 
-1. This module is a placeholder in the first release.
-2. Countdown creation, pausing, resuming, and completion alerts are not implemented yet.
-
-## Testing approach
-
-Testing notes will be added when this module is implemented.
-
+1. Timers start empty and are kept for the current browser session only.
+2. The user can add up to five timers using hour, minute, and second fields.
+3. Each timer can be started, paused, reset to its original duration, or deleted.
+4. A running timer counts down accurately and displays `00:00:00` when complete.
+5. A completed timer plays the default alarm sound.
