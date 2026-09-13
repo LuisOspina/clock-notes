@@ -17,8 +17,7 @@
 15. When an alarm is due, the app shows a non-browser-notification popup with the alarm time and a Dismiss button. It plays the bundled default alarm audio on a loop until dismissed. The browser must remain open for the popup and audio to occur.
 16. Dismissing an alarm stops the current sound and popup only. It does not disable or delete future occurrences of the alarm.
 17. Custom sound uploads are not supported. All alarms use the same bundled default sound; no audio files are stored in or served from AWS.
-18. Alarm data is shared. The API supports listing, creating, updating, and deleting alarms, returns clear validation and not-found errors, and applies gateway rate limits. The public API documentation exposes only the available alarm and OpenAPI routes.
-19. The Alarms module uses the application's high-contrast light theme, with readable text, visible keyboard focus indicators, and accessible labels for all controls.
+18. Alarm data is shared. The Alarms module uses the application's high-contrast light theme, with readable text, visible keyboard focus indicators, and accessible labels for all controls.
 
 ## Testing approach
 
@@ -28,5 +27,5 @@
 4. Verify clearing every day disables the alarm and shows the inline warning; verify the card checkbox can re-enable it.
 5. Verify an alarm saved or enabled during its matching minute does not ring until a future occurrence.
 6. Verify Dismiss appears only when an alarm is actively ringing, stops the active audio and popup, and leaves later occurrences enabled.
-7. Verify create, update, delete, the 10-alarm limit, and API validation/not-found responses.
-8. Verify the dialog, alarm cards, and API documentation can be operated with a keyboard and remain readable in the light theme.
+7. Verify creating, editing, deleting, and the 10-alarm limit.
+8. Verify the dialog and alarm cards can be operated with a keyboard and remain readable in the light theme.
