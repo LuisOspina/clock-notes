@@ -1,6 +1,6 @@
 # Functional requirements
 
-1. The Alarms module supports up to 10 shared alarms. Each alarm receives a monotonically increasing numeric identifier.
+1. The Alarms module supports up to 10 shared alarms.
 2. A primary **Add alarm** button is always placed at the bottom of the Alarms view and is disabled when 10 alarms exist.
 3. Opening Add alarm shows a simple dialog. Its time defaults to the next whole local hour; for example, at 19:10 it defaults to `20:00`, and at 21:00 it defaults to `22:00`.
 4. The dialog has separate `hh` and `mm` integer fields. Hours must be 0–23 and minutes must be 0–59. Invalid values prevent saving and show a clear inline message.
@@ -8,7 +8,7 @@
 6. An alarm with one or more selected days is enabled. Clearing every day disables it and displays a non-blocking warning. The enabled state is not editable in the dialog.
 7. The dialog may optionally collect an alarm name of up to 20 characters. When present, the name is shown in lighter text in parentheses after the day summary.
 8. The dialog shows the saved time zone and provides Cancel and Add or Save actions. Editing an existing alarm also provides Delete; Delete takes effect immediately without a confirmation dialog.
-9. Every alarm card displays its numeric identifier, its schedule summary, its time in `HH:MM` format, an optional name, the saved time zone, and an enabled/disabled checkbox. The schedule summary is `Every day`, `Weekdays`, `Weekends`, or a comma-separated set such as `Mon, Tue, Fri`.
+9. Every alarm card displays its schedule summary, its time in `HH:MM` format, an optional name, the saved time zone, and an enabled/disabled checkbox. The schedule summary is `Every day`, `Weekdays`, `Weekends`, or a comma-separated set such as `Mon, Tue, Fri`.
 10. Clicking an alarm card opens its edit dialog. Clicking the enabled checkbox must not open the dialog.
 11. The enabled checkbox on the card is the manual way to enable or disable an alarm without editing its time or schedule.
 12. A Dismiss control is shown only in the active alarm popup. It is not available in advance on the alarm card.
